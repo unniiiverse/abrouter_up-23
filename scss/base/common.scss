@@ -1,1 +1,41 @@
 //* Common styles.
+.t {
+  &-h {
+    font-weight: 800;
+    line-height: 130%;
+
+    &-hero {
+      font-size: rem(50);
+    }
+
+    &-1 {
+      letter-spacing: -1%;
+      font-size: rem(40);
+    }
+  }
+
+  &-b {
+    line-height: 155%;
+
+    &-l {
+      font-size: rem(18);
+    }
+
+    &-m {
+      font-size: rem(16);
+    }
+
+    &-s {
+      font-size: rem(14);
+    }
+  }
+
+  &-btn {
+    font-weight: 700;
+
+    &-l {
+      line-height: 150%;
+      letter-spacing: -2%;
+    }
+  }
+}

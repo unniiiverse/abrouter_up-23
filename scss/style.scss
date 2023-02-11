@@ -8,7 +8,7 @@ $defaultFontSize: 16px;
 @import url('https://unniiiverse.github.io/cdn/style/normalize.min.css');
 @import './base/fonts';
 // Google fotns import or other font cdn
-
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Inter:wght@400;500;600;700;800&display=swap');
 
 @import './base/mixins';
 @import './base/vars';
@@ -17,14 +17,14 @@ $defaultFontSize: 16px;
 
 
 //* Default font settings.
-$fontSize: rem(16);
+$fontSize: rem(12);
 $fontWeight: 400;
-$fontColor: #000;
-$fontFamily: system-ui;
+$fontColor: $c-9;
+$fontFamily: 'Inter', system-ui;
 
 //* Wrapper settings.
-$wrapperMaxWidth: 1170px;
-$wrapperMinWidth: 320px;
+$wrapperMaxWidth: 1220px;
+$wrapperMinWidth: 340px;
 $wrapperSidePadding: 16px;
 
 
