@@ -1,5 +1,7 @@
 //* Common styles.
 .t {
+  transition: .2s ease-in-out color;
+  
   &-h {
     font-weight: 800;
     line-height: 130%;
@@ -45,7 +47,7 @@
 .btn {
   background-color: $c-cta;
   border-radius: 10px;
-  flex-wrap: nowrap;
+  flex-shrink: 0;
   transform: translateY(0);
   transition: .2s ease-in-out transform;
 

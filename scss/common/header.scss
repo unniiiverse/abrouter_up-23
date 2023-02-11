@@ -1,0 +1,113 @@
+.header {
+  background-color: $c-primary;
+  
+  
+  &-top {
+    background-color: $c-primary;
+    border-bottom: 1px solid $c-8;
+    padding: 30px;
+
+    &_container {
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 1467px;
+    }
+
+    &_menulogo {
+      display: flex;
+      align-items: center;
+      gap: 164px;
+    }
+
+    &_logo {
+      .t {
+        font-family: 'Allerta Stencil', system-ui;
+        font-size: rem(22);
+        line-height: 150%;
+        color: $c-white;
+        text-transform: uppercase;
+      }
+    }
+
+    .menu {
+      &-list {
+        display: flex;
+        gap: 34px;
+      }
+
+      &-item {
+        position: relative;
+        flex-shrink: 0;
+        padding: 0 10px;
+
+        .t {
+          color: #9697AB;
+          font-size: rem(16);
+          line-height: 140%;
+          letter-spacing: 0 0.01em;
+          font-weight: 500;
+        }
+
+        &::before {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 3px;
+          background-color: $c-cta;
+          left: 0;
+          top: 59px;
+          transition: .2s ease-in-out opacity;
+          opacity: 0;
+        }
+
+        &--active {
+          .t {
+            color: $c-white;
+          }
+
+          &::before {
+            opacity: 1;
+          }
+        }
+
+        &:hover {
+          .t {
+            color: $c-white;
+          }
+
+          &::before {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    &_signinup {
+      display: flex;
+      gap: 8px;
+
+      .btn {
+        padding: 11px 24px;
+
+        &:nth-child(1) {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .header {
+    &-top {
+      &_menulogo {
+        gap: 40px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 808px) {
+  // burger menu
+}
