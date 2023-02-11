@@ -31,11 +31,57 @@
   }
 
   &-btn {
+    font-size: rem(18);
     font-weight: 700;
+    color: $c-white;
 
     &-l {
       line-height: 150%;
       letter-spacing: -2%;
     }
+  }
+}
+
+.btn {
+  background-color: $c-cta;
+  border-radius: 10px;
+  flex-wrap: nowrap;
+  transform: translateY(0);
+  transition: .2s ease-in-out transform;
+
+  &:hover:not(.btn-sm) {
+    transform: translateY(-2px);
+  }
+
+  &-sm {
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+
+    p {
+      color: $c-cta;
+    }
+
+    div {
+      padding: 6px 9px;
+      transform: translateX(0);
+      transition: .2s ease-in-out transform;
+    }
+
+    &:hover {
+      div {
+        transform: translateX(2px);
+      }
+    }
+  }
+
+  &-s {
+    padding: 16px 55px;
+  }
+
+  &-l {
+    padding: 16px 100px;
   }
 }
