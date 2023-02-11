@@ -1,7 +1,6 @@
 .header {
   background-color: $c-primary;
   
-  
   &-top {
     background-color: $c-primary;
     border-bottom: 1px solid $c-8;
@@ -96,6 +95,86 @@
       }
     }
   }
+
+  &-center {
+    position: relative;
+    padding: 120px 0 75px;
+
+    .hero {
+      z-index: 2;
+
+      .t-h-hero {
+        color: $c-white;
+        max-width: 670px;
+        margin-bottom: 35px;
+      }
+
+      &-list {
+        margin-bottom: 65px;
+      }
+
+      &-item {
+        .t {
+          color: rgba($color: $c-white, $alpha: .8);
+        }
+      }
+
+      .btn {
+        margin-bottom: 140px;
+      }
+    }
+
+    .partners {
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      gap: 60px;
+
+      .t {
+        color: rgba($color: $c-white, $alpha: .8);
+      }
+
+      &-logos {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        .t {
+          color: #9699AB;
+          text-transform: uppercase;
+          font-size: rem(20);
+          font-weight: 700;
+          line-height: 155%;
+          transition: .1s ease-in-out color;
+
+          &:hover {
+            color: $c-white;
+          }
+        }
+      }
+    }
+  }
+
+  &-ico-1 {
+    position: absolute;
+    right: 98px;
+    top: 0;
+    z-index: 1;
+    opacity: 1;
+    transition: .2s ease-in-out opacity;
+  }
+}
+
+@media only screen and (max-width: 1370px) {
+  .header {
+    &-ico-1 {
+      position: absolute;
+      right: 98px;
+      top: 0;
+      z-index: 1;
+      opacity: .5;
+    }
+  }
 }
 
 @media only screen and (max-width: 980px) {
@@ -110,4 +189,14 @@
 
 @media only screen and (max-width: 808px) {
   // burger menu
+}
+
+@media only screen and (max-width: 700px) {
+  .header {
+    .hero {
+      .t-h-hero {
+        font-size: rem(40);
+      }
+    }
+  }
 }
