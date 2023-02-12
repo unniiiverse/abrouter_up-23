@@ -281,6 +281,10 @@
   .t {
     color: $c-white;
 
+    &-t-subtitle {
+      color: $c-accent;
+    }
+
     &-h-1 {
       margin-bottom: 50px;
     }
@@ -383,6 +387,26 @@
   }
 }
 
+.s5 {
+  padding: 130px 0;
+
+  &_container {
+    align-items: center;
+
+    .t {
+      text-align: center;
+
+      &-h-1 {
+        margin-bottom: 24px;
+      }
+
+      &-b-l {
+        margin-bottom: 40px;
+        max-width: 410px;
+      }
+    }
+  }
+}
 
 
 @media only screen and (max-width: 1610px) {
