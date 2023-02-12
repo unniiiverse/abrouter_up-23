@@ -16,6 +16,16 @@
     }
   }
 
+  &-t {
+    &-subtitle {
+      color: $c-accent;
+      line-height: 150%;
+      letter-spacing: -0.02em;
+      font-size: rem(18);
+      font-weight: 700;
+    }
+  }
+
   &-b {
     line-height: 155%;
 
@@ -64,6 +74,10 @@
 
     p {
       color: $c-cta;
+      font-size: rem(18);
+      line-height: 150%;
+      letter-spacing: -0.02em;
+      font-weight: 700;
     }
 
     div {
