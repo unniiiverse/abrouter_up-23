@@ -14,6 +14,10 @@
       letter-spacing: -1%;
       font-size: rem(40);
     }
+
+    &-3 {
+      font-size: rem(24);
+    }
   }
 
   &-t {
@@ -23,6 +27,7 @@
       letter-spacing: -0.02em;
       font-size: rem(18);
       font-weight: 700;
+      margin-bottom: 24px;
     }
   }
 
